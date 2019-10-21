@@ -25,7 +25,7 @@ void main()
 void bubble(int A[],int N)
 {
     int round,i,temp;
-    for(round=1; round<N-1; round++) //round=total size of elements-1
+    for(round=1; round<=N-1; round++) //round=total size of elements-1
     {
         for(i=0; i<=N-1-round; i++)
         {
