@@ -32,4 +32,5 @@ void main()
         printf("\t::::::::Sum Of All Elements::::::::::\n");
         printf("%d",sum);
     }
+    free(ptr);
 }
