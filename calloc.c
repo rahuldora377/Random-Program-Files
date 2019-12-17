@@ -4,7 +4,7 @@
 
 void main()
 {
-    int *ptr, *n, sum=0, no, num, i;
+    int *ptr, *n, sum=0,num, i;
     printf("Enter the numbers of elements: ");
     scanf("%d", &num);
     ptr = (int *)calloc(num, sizeof(int));//calloc accepts 2 arguments first one is number of elements and second one is number of bytes or the type of data
@@ -32,5 +32,5 @@ void main()
         printf("\t::::::::Sum Of All Elements::::::::::\n");
         printf("%d",sum);
     }
-    free(ptr);
+    free(ptr);//free() is used to free the memory allocated to ptr through calloc()
 }
