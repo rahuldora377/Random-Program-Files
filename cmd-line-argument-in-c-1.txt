@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main(int argc,char* argv[])
+{
+    printf("number of arguments: %d\n",argc);//prints total number of arguments passed to the program
+
+    printf("Arguments are\n");
+
+    for(int i=0; i<argc; i++) //prints all the arguments passed to the program including program name
+    {
+        printf("argv[%d]=%s \n",i,argv[i]);//argv is a string so we can directly access the value inside pointer using %s format specifier
+    }
+    
+    getch();
+}
